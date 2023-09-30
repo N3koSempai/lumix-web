@@ -1,0 +1,77 @@
+.heroSection {
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url("./image/avif/land.avif");
+    background-size: cover;
+}
+
+.forceTitle {
+    font: 4rem roboto;
+        color: white;
+        opacity: 0.7;
+        display: flex;
+        position: absolute;
+        text-align: center;
+        bottom: 18rem;
+        left: 38%;
+}
+
+@media screen and (max-width: 500px) {
+    .heroSection {
+        background-size: contain;
+    }
+
+    
+}
+
+
+button {
+    z-index: 3; 
+    position: absolute;
+    
+    margin-left: 40%;
+    margin-right: 5%; 
+    margin-top: auto; 
+    bottom: 8rem;
+    height: 5rem;
+    width: 20rem;
+    font-size: 21px;
+background: rgba(255, 255, 255, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);
+border: 1px solid rgba(255, 255, 255, 0.09);
+    cursor: pointer;
+    border-radius: 1000px;
+    transition: all 0.5s;
+    color: #00FFCB;
+    
+} button::before {
+    content: '';
+      border-radius: 1000px;
+      min-width: calc(300px + 12px);
+      min-height: calc(60px + 12px);
+      border: 6px solid #00FFCB;
+      box-shadow: 0 0 60px rgba(0,255,203,.64);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+    }
+    .button:hover, .button:focus {
+        color: #313133;
+        transform: translateY(-6px);
+      }
+      
+      button:hover::before, button:focus::before {
+        opacity: 1;
+      }
+     
+      
+    
+          
